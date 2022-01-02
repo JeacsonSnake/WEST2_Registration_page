@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册界面</title>
+    <link rel="stylesheet" href="Register.css">
+</head>
+<body>
+    <div class="mainpage">
+        <div class="formpage">
+            <div class="title">新用户注册</div>
+            <div class="Rform">
+                <form action="#" method="post">
+                    <!-- 定义一个表格 -->
+                    <table class="t">
+
+                        <!--用户名-->
+                        <tr>
+                            <td class="td_left"><label for="username">用户名</label></td>
+                            <td class="td_right"><input type="text" name="username" id="username" placeholder="请输入用户名"></td>
+                        </tr>
+
+                        <!--邮箱-->
+                        <tr>
+                            <td class="td_left"><label for="email">Email</label></td>
+                            <td class="td_right"><input type="email" name="email" id="email" placeholder="请输入邮箱"></td>
+                        </tr>
+
+                        <!--密码-->
+                        <tr>
+                            <td class="td_left"><label for="password">密码</label></td>
+                            <td class="td_right"><input type="password" name="password" id="password" placeholder="请输入密码"></td>
+                        </tr>
+                        
+                        <!--再次输入密码-->
+                        <tr>
+                            <td class="td_left"><label for="passwordcheck">再次输入密码</label></td>
+                            <td class="td_right"><input type="password" name="passwordcheck" id="passwordcheck" placeholder="请再次输入密码"></td>
+                        </tr>
+                        <tr>
+                            <!-- 定义一个提交按钮 -->
+                            <td colspan="2" align="center"><input type="submit" id="btn_sub" value="注册"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="ifR"></div>
+        </div>
+    </div>
+</body>
+</html>
