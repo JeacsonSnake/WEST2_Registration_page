@@ -6,53 +6,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>注册界面</title>
     <link rel="stylesheet" href="Register.css">
+    <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
+    <!-- <script defer src="font-awesome/js/all.js"></script>也可以用 -->
 </head>
 <body>
+
     <div class="mainpage">
+
         <div class="formpage">
+
             <div class="title">新用户注册</div>
+
             <div class="Rform">
                 <form action="#" method="post">
-                    <!-- 定义一个表格 -->
                     <table class="form-table">
 
                         <!--用户名-->
                         <tr>
-                            <td class="td_left"><label for="username">用户名</label></td>
-                            <td class="td_right"><input type="text" name="username" id="username" placeholder="请输入用户名"></td>
+                            <td class="td-left">
+                                <label for="username">用户名</label>
+                            </td>
+
+                            <td class="td-right">
+                                <input type="text" name="username" id="username" placeholder="请输入用户名">
+                                <span id="s-username" class="error"></span>
+                            </td>
+                            
                         </tr>
 
                         <!--邮箱-->
                         <tr>
-                            <td class="td_left"><label for="email">Email</label></td>
-                            <td class="td_right"><input type="email" name="email" id="email" placeholder="请输入邮箱"></td>
+
+                            <td class="td-left">
+                                <label for="email">Email</label>
+                            </td>
+
+                            <td class="td-right">
+                                <input type="email" name="email" id="email" placeholder="请输入邮箱">
+                                <span id="s-email" class="error"></span>
+                            </td>
+
                         </tr>
 
                         <!--密码-->
                         <tr>
-                            <td class="td_left"><label for="password">密码</label></td>
-                            <td class="td_right"><input type="password" name="password" id="password" placeholder="请输入密码"></td>
+
+                            <td class="td-left">
+                                <label for="password">密码</label>
+                            </td>
+
+                            <td class="td-right">
+                                <input type="password" name="password" id="password" placeholder="请输入密码">
+                                <span id="s-password" class="error"></span>
+                            </td>
+
                         </tr>
                         
                         <!--再次输入密码-->
                         <tr>
-                            <td class="td_left"><label for="passwordcheck">再次输入密码</label></td>
-                            <td class="td_right"><input type="password" name="passwordcheck" id="passwordcheck" placeholder="请再次输入密码"></td>
+
+                            <td class="td-left">
+                                <label for="passwordcheck">再次输入密码</label>
+                            </td>
+
+                            <td class="td-right">
+                                <input type="password" name="passwordcheck" id="passwordcheck" placeholder="请再次输入密码">
+                                <span id="s-passwordcheck" class="error"></span>
+                            </td>
+
                         </tr>
+
+                        <!-- 提交 -->
                         <tr>
-                            <!-- 定义一个提交按钮 -->
-                            <td colspan="2" align="center"><input type="submit" id="btn_sub" value="注册"></td>
+                            <td colspan="2" align="center">
+                                <input type="submit" id="btn-sub" value="注册">
+                            </td>
                         </tr>
                     </table>
                 </form>
             </div>
+            
             <div class="ifR">
                 <p>已有账号？<a href="#">立即登录</a></p>
             </div>
+
         </div>
+
         <footer>
             Jeacson_Snake All rights reserved © 2022
         </footer>
+
     </div>
+    
 </body>
 </html>
